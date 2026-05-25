@@ -31,7 +31,6 @@ import org.apache.beam.sdk.options.Validation;
     flexContainerName = "pipeline-yaml",
     yamlTemplateFile = "IcebergToOracle.yaml",
     filesToCopy = {
-      "template.yaml",
       "main.py",
       "requirements.txt",
       "options/iceberg_options.yaml",

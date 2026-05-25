@@ -50,15 +50,7 @@ pipeline:
         url: "{{ jdbcUrl }}"
         username: "{{ username }}"
         password: "{{ password }}"
-        query: {{ writeQuery }}
-        driver_jars: {{ driverJars }}
-        connection_properties: {{ connectionProperties }}
-        connection_init_sql: {{ connectionInitSql }}
-        write_statement: {{ writeStatement }}
         table: {{ location }}
-        batch_size: {{ batchSize }}
-        autosharding: {{ autosharding }}
-        type: {{ jdbcType | default("oracle") }}
 
 options:
   streaming: false
